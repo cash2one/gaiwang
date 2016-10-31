@@ -1,0 +1,33 @@
+<?php 
+ //语言包文件 
+return array (
+  '_用户中心_' => '_ Users center _',
+  '企业会员提现记录。' => 'Member companies to cash request records.',
+  '元' => 'Yuan',
+  '元 (自2013年1月12日起， 提现手续费收费比例下调，
+                                具体标准按签约合同附件中条款执行)' => 'Since 12th January 2013, the service fee of cash request was reduced, its fee was implemented and according to the clauses of agreement.',
+  '公司名称' => 'Store Name',
+  '可提现金额' => 'can be cash out',
+  '备注' => 'Remark',
+  '实扣金额' => 'Actual deduct amount',
+  '帐号名' => 'Account Name',
+  '开户行' => 'Bank',
+  '手续费' => 'Fee',
+  '手续费费率' => 'Fee rates',
+  '提现列表' => 'Withdrawals list',
+  '提现金额' => 'withdrawal amount',
+  '最小提现金额' => 'The least withdrawal amount',
+  '状态' => 'Status',
+  '用户银行账户信息必须与提交给盖网公司的信息一致，方可转账成功。' => 'User\'s bank account information must be identical with and submitted to GATEWANG, then the wire transfer will be succeed.',
+  '申请提现' => 'Apply cash request',
+  '申请时间' => 'Application time',
+  '申请金额' => ' Request amount ',
+  '被冻结金额' => 'Frozen amount',
+  '账户余额' => 'Account balance',
+  '账户管理' => 'Account Management',
+  '选择地区' => 'Select a region',
+  '选择城市' => 'Select a city',
+  '选择省份' => 'Select province',
+  '银行帐号' => 'Bank Account',
+  '银行所在地区' => 'Bank region',
+);

@@ -1,0 +1,1 @@
+<?php $this->renderPartial('_form', array('model'=>$model,'submit'=>$submit,'check'=>$check)); ?>

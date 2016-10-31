@@ -1,0 +1,24 @@
+/* 实体店 */
+.shop_entity_box{ width:1120px; margin:0 auto; background:#FFF; border:1px solid #CCC; padding:40px;}
+.shop_entity_box .editor{ width:1120px;}
+.shop_entity_box .cons{ line-height:23px !important; font-size:12px !important; color:#333 !important; overflow:hidden; padding:5px;}
+.shop_entity_box .title img{ width:1120px;}
+.shop_entity_box .zhans{ width:1120px; padding:10px 0}
+
+.t1-feature-910x500{  width:1120px; height:500px; overflow:hidden;position:relative;}
+.t1-feature-910x500 .slides_container{ width:1120px;  height:500px; text-align:center; background:#EBEBEB;}
+.t1-feature-910x500 .pagination {z-index:99; position:absolute; right:10px; bottom:10px;  }
+.t1-feature-910x500 .pagination i { display:inline-block; font-style:normal; height:20px; line-height:20px; width:20px; text-align:center; background:#000; color:#fff; margin-right:10px;}
+.t1-feature-910x500 .pagination i.curr { background:#c90000; color:#fff; }
+.t1-feature-910x500 .prev, #t1-feature-990x510 .next{ display:none; }
+
+.shop_entity_box .map{ width:1120px; height:355px; overflow:hidden; padding:10px 0 0 0 ; clear: both}
+#template1 .shop_entity_box .dz_con{ padding:5px; background:url(../images/bg/lxfs.gif) no-repeat center 20px; padding-top:120px;  text-align:center; }
+#template1 .shop_entity_box .dz_con .as{font-family:"微软雅黑", "宋体"; font-size:16px; color:#333; text-align:center; padding:0 5px;}
+#template1 .shop_entity_box .dz_con .gzf_bj{ background:#f1f1f1; padding:10px 0; margin-top:20px;}
+#template1 .shop_entity_box .dz_con .gzf_bj li{ width:300px; float:left;}
+#template1 .shop_entity_box .dz_con .gzf_bj li .k1{ background:url(../images/bg/shop_m1.jpg) no-repeat center 20px; height:40px; display:block; padding-top:60px; font-family:"微软雅黑", "宋体"; font-size:18px; color:#666}
+#template1 .shop_entity_box .dz_con .gzf_bj li .k2{ background:url(../images/bg/shop_m2.jpg) no-repeat center 20px; height:40px; display:block; padding-top:60px; font-family:"微软雅黑", "宋体"; font-size:18px; color:#666}
+#template1 .shop_entity_box .dz_con .gzf_bj li .k3{ background:url(../images/bg/shop_m3.jpg) no-repeat center 20px; height:40px; display:block; padding-top:60px; font-family:"微软雅黑", "宋体"; font-size:18px; color:#666}
+#template1 .shop_entity_box .dz_con .gzf_bj li dl{line-height:30px; font-family:"微软雅黑", "宋体"; color:#333; font-size:14px;}
+#template1 .shop_entity_box .dz_con .gzf_bj li dl dd a{ display:inline-block; margin-bottom:-5px; margin-left:5px;}

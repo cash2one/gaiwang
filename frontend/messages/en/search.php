@@ -1,0 +1,28 @@
+<?php 
+ //语言包文件 
+return array (
+  '1.看看输入的文字是否有误。' => '1 . See whether the input text is incorrect.',
+  '2.重新搜索。' => '2 search again.',
+  '上一页' => 'Previous page',
+  '下一页' => 'Next page',
+  '价格' => 'Price',
+  '分类' => 'Classification',
+  '加入购物车' => 'Add to Cart',
+  '品牌' => 'Brand',
+  '商品搜索' => 'Product Search',
+  '建议您' => 'We recommend you',
+  '搜索' => 'Search',
+  '收起' => 'Pack Up',
+  '更多' => 'More',
+  '末页' => 'End',
+  '没有相关分类' => 'No related categories',
+  '没有相关品牌' => 'No related brand',
+  '盖象商城' => 'GATEWANG eMall',
+  '积分' => 'Credits',
+  '访问出错！' => 'Access Error !',
+  '评论' => 'Comment',
+  '销量' => 'Sales',
+  '销量：{a}件' => 'Sales : {a} items',
+  '首页' => 'Home',
+  ' - 搜索' => '- Search',
+);

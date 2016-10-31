@@ -1,0 +1,69 @@
+﻿/* 
+========================================
+	@name 	:	全局
+	@author	:	盖网店铺
+	@data	:	2012.6.25
+========================================
+*/
+
+img{ border:0; display: inline }
+ 
+/* 全局样式 */
+.left{ float:left;}
+.right{ float:right;}
+.header{margin:0 auto; min-width:1200px;}
+.main{margin:0 auto;width:1200px;}
+
+
+/* 顶部栏 */
+.top_bj,.top_con{ width:100%; height:35px; line-height:35px;position:fixed; _position:absolute; left:0; top:0; overflow:hidden;}
+.top_bj{ background:#000;filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7; z-index:200}
+.top_con{ z-index:201; color:#E3E3E3;}
+.top_con a{ color: #E3E3E3}
+.top_con a:hover{ color: #FFF }
+.top_con .left_con{ float:left; height:35px; padding:0 10px 0 0;}
+.top_con .left_con span.title{ font-family:"微软雅黑", "宋体"; font-size:16px; padding:0 10px;}
+.top_con .right_con{ float:right; height:35px;line-height:35px;padding:0 10px; _padding-top:6px;}
+.top_con .right_con span{ padding:0 3px;}
+.top_con .bt_h20{ background:url(../images/sub-top.gif) no-repeat center bottom; line-height:19px; text-align:center; width:43px; height:20px; display:inline-block; border:0;}
+.top_con .bt_h20:hover{ background:url(../images/sub-top.gif) no-repeat center top;}
+.top_con .bt_w71{ background: url(../images/btn_65x20.gif) no-repeat center bottom; line-height:19px; text-align:center; width:62px; height:20px; display:inline-block; border:0;}
+.top_con .bt_w71:hover{ background:url(../images/btn_65x20_cur.gif) no-repeat center top;}
+
+a.img_ms:link ,a.img_ms:visited{ 
+    display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	*font-size:40px;
+	*font-family:Arial, Helvetica, sans-serif;
+	overflow:hidden;
+	clear:both;
+}
+a.img_ms img{
+	vertical-align:middle;
+	text-align:center;
+	display:inline;
+	margin:0 auto;
+ }
+ 
+/* 通用标题 */
+.titles{ height:24px; line-height:24px; padding:10px 0;}
+.titles h3{ background: url(../images/shopingbar.gif) no-repeat left center; padding:0 10px 0 50px; font-family:"微软雅黑", "新宋体"; font-size:18px; font-weight:bold; color:#754b45; display:inline-block;}
+.titles h3 .en{ont-family:"微软雅黑", "新宋体"; font-size:18px; font-weight:bold; color:#f2a8a7 !important; display:inline-block; padding-left:10px;}
+.boder_sid{ border:1px solid #ddc9cb; border-top:3px solid #e6474c; background:#FFF}
+.titles_more{ background:#e34947 url(../images/title_more.gif) no-repeat right center; display:inline-block; padding:0 15px 0 5px; color:#FFF; line-height:25px; float:right; margin-right:10px;}
+.titles_more:hover{color:#FFF}
+
+/* 页面编辑 */
+.editor{ position:relative; z-index:99}
+.editor_a{ width:50px; height:23px; padding:0 5px; position:absolute; top:0; right:0; background:#000; color:#FFF; text-align:center; z-index:99999}
+.editor_a:hover{ background:#333;}
+.t1_war{ width:788px; overflow:hidden;}
+
+.top-background{ width:100%; height:35px; background: #333;z-index:99;}
+.top-con{ width:990px;height:35px; line-height:35px; color:#FFF; margin:0 auto; font-size:12px;}
+/* 帮助按钮*/
+.top_con .right_con span.help_info{ background: url(../images/help.png) no-repeat left center;  _background: url(../images/help.gif) no-repeat left center;padding-left:18px;}

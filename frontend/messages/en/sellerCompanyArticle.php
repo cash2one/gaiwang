@@ -1,0 +1,26 @@
+<?php 
+ //语言包文件 
+return array (
+  '创建时间' => 'Created',
+  '删除' => 'Delete',
+  '发布状态' => 'Publish Status',
+  '审核状态' => 'Audit status',
+  '店铺文章页面的列表展示。' => 'Shop articles pages icon',
+  '搜索' => 'Search',
+  '操作' => 'Operating',
+  '文章列表' => 'Article List',
+  '文章标题' => 'Article heading',
+  '文章标题：' => 'Article heading:',
+  '添加文章' => 'Add articles ',
+  '编辑' => 'Edit',
+'文章信息'=>'Article info',
+'排序'=>'Order',
+'发布'=>'Publish',
+'内容'=>'Content',
+'页面关键字'=>'Page keywords',
+'页面关描述'=>'Page description',
+'新增'=>'Add new',
+'成功'=>' Successful',
+'编辑文章'=>'Edit article ',
+'修改文章'=>'Modify the article ',
+);

@@ -1,0 +1,36 @@
+.input{
+	padding: 8px;
+    height: 24px;
+}
+.audit-party .left span{
+	font-size: 13px;
+}
+.audit-party .left ul li{
+	padding: 5px;
+}
+.audit-party .left{
+	width:580px;
+}
+.audit-tableTitle{
+	margin-bottom: 12px;
+}
+a.check{
+	float: right;
+    padding-right: 40px;
+    font-size: 16px;
+    color: #09F;
+    cursor: pointer;
+}
+a.upda{
+    float: right;
+    padding-right: 40px;
+    font-size: 16px;
+    color: #09F;
+    cursor: pointer;
+}
+.party-prcList ul li{
+	width:145px;
+}
+.audit-party .right{
+	width: 520px;
+}

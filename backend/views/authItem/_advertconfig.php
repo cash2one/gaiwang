@@ -1,0 +1,21 @@
+<?php
+$config = array(
+    '广告位列表'=>array(
+        '列表'=>'Advert.Admin',
+        '添加'=>'Advert.Create',
+        '编辑'=>'Advert.Update',
+        '删除'=>'Advert.Delete',
+        '缓存更新'=>'Advert.GenerateAllAdvertCache',       
+    ),
+      '广告位图片管理'=>array(
+        '列表'=>'AdvertPicture.Admin',
+        '添加'=>'AdvertPicture.Create',
+        '编辑'=>'AdvertPicture.Update',
+        '删除'=>'AdvertPicture.Delete',            
+    ),
+    '商城首页导航'=>array(
+        '编辑'=>'Home.NavigationConfig',
+    ),
+);
+$this->renderPartial('_input',array('config'=>$config,'rights'=>$rights));
+?>

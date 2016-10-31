@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+
+/* 2015-11-6 梁楚崇 代理商后台模板 */
+
+
+
+/* 表格 */
+.tab-reg {width: 100%;}
+.tab-reg th{background-color: #9c0001; height:35px; color:#FFF; font-family:"微软雅黑"; font-size:14px; text-align:center;}
+.tab-reg th a { color: #fff; }
+.tab-reg td{ color: #666666;font-family: "微软雅黑"; height:20px; line-height:20px;padding: 5px;text-align: center;overflow: hidden;}
+.tab-come{ width:100%;}
+.tab-come th{ font-size:14px; font-weight:bold; font-family:"微软雅黑"; color: #333}
+.tab-come .title-th{background-color: #F82525; height:30px; color:#FFF; font-family:"微软雅黑"; font-size:16px; line-height:30px;text-align:center;}
+.tab-come td,.tab-come th{ height:25px; font-family:"微软雅黑"; line-height:25px; padding:5px; color:#666; position: relative;}
+.tab-come th{text-align: right;}
+.odd{ background:#eee}
+.even{ background:#fff}
+.tab-reg td .roleImg{ display:block; height:22px; width:22px; overflow:hidden;}
+
+.tab-reg4{ font-size:14px; line-height:24px;}
+.tab-reg4 th{ border:1px solid #d1d1d1; background:#f8f3ec; color:#010101; padding:10px;}
+.tab-reg4 td{ border:1px solid #d1d1d1; text-align:left; color:#1f1f1f; padding:10px;}
+.tab-reg4 p.why{ border-top:1px dashed #5a5a5a;}
+
+
+/* 按钮 */
+.big-sub:hover,.big-sub {background: url(../images/big_sub.gif) no-repeat;height: 43px;width: 114px;line-height: 43px;text-align: center;font-family: "微软雅黑";font-size: 16px;color: #FFF;border:0;
+    display:inline-block;cursor:pointer;}
+.regm-sub:hover,.regm-sub {font-family: "微软雅黑";line-height: 27px;background: url(../images/sub-fou.gif) no-repeat;height: 27px;width: 83px;text-align: center;color: #FFF;border:0;display: inline-block; cursor:pointer;}
+.regl-sub:hover,.regl-sub {font-family: "微软雅黑";line-height: 27px;background: url(../images/sub-reg-long.gif) no-repeat;height: 27px;width: 163px;text-align: center;color: #FFF;border:0;display: inline-block; cursor:pointer;}
+
+.searchTable{ float: left; height: 32px; min-width: 150px; margin-right: 10px;}
+.searchTable td{ white-space: nowrap; padding-right: 8px;}
+.searchTable th{ height:32px; color:#000; font-family:"微软雅黑"; font-size:14px;white-space: nowrap; padding-right: 5px;   }
+
+/* 图标 */
+.ico_sb{ background:url(../images/ico_tip.jpg) no-repeat left center; padding-left:15px; display:inline-block; color:#F60}
+.ico_cg{ background:url(../images/ico_ok.jpg) no-repeat left center; padding-left:15px; display:inline-block; color: #6C0}
+
+
+/*选择时间*/
+.enterDate{background: url(../images/enterDate1.png) no-repeat;}
+.depDate{background:url(../images/departDate1.png) no-repeat;}
+.dateTxt{cursor:pointer; font-size:14px; background:url(../images/enterDate1.png) center right no-repeat;}
+/*= 清除浮动=*/
+.clear{clear: both; height:0px; line-height:0px; font-size:0px;}
+.clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+
+a{ display:inline-block;}
+.com-box { width:96%;background:#FFF; padding:10px 20px 50px 20px;margin: 10px auto 20px; border-radius:3px;}
+.c10{ height:10px; width:100%;}
+.c30{ height:30px; width:100%;}
+.c50{ height:50px; width:100%;}
+.mt5 { margin-top:5px;}
+.mt10 { margin-top:10px;}
+.mt15 { margin-top:15px;}
+.orange { color: Red; }
+.fl{float: left;}
+.fr{float: right;}
+.input{ border:#ddd solid 1px; border-radius:3px; padding:5px; height:20px; line-height:20px;}
+.textarea{border:#ddd solid 1px; border-radius:3px; padding:5px; min-height:100px;}
+.ml10{ margin-left:10px;}
+.sl{ width:50px;}
+.ml{ width:180px;}
+.cl{ width:300px;}
+.xl{ width:555px;}
+.red{ color:#F00; margin-right:2px;}
+.red p{ color:#F00;}
+.red span{ color:#F00;}
+
+.border-info .audit-select{ font-size:14px; border:#ddd solid 1px; padding:3px 5px; border-radius:3px; font-family:"微软雅黑";}
+.audit-select{ font-size:14px; border:#ddd solid 1px; font-family:"微软雅黑";}
+.audit-update{ color:#FFF; font-size:16px; cursor:pointer;}
+.audit-update i{ background:url(../images/datepicker-images/ui-icons_222222_256x240.png) -100px -22px no-repeat; background-size:2000%; display:inline-block; width:20px; height:20px;}
+.audit-update.on i{ background-position:-0px -22px;}
+.audit-type{ line-height:40px;height:50px; overflow:hidden;}
+.audit-type div{ display:inline-block; width:320px; font-size:13px;}
+.audit-type div span{ display:inline-block; width:70px; font-weight:600; font-size:13px;}
+.audit-tableTitle{ line-height:30px; background:#EEEEEE; text-indent:10px;}
+.audit-tableTitle span{ color:#F00;}
+.audit-party{ padding:20px 0px;}
+.audit-party .left{ float:left; width:510px;}
+.audit-party .left ul li{ line-height:40px; min-height:42px;display:inline-block;}
+.audit-party .left span{ font-size:13px;}
+.audit-party .party-name{ width:180px; text-align:right; padding-right:15px;float:left; }
+.audit-party .party-name i{ color:#F00; margin-right:3px; font-style:inherit;}
+.audit-party .party-con{ width:270px;float:left; }
+.audit-party .party-cho{ float:left;}
+.audit-party .party-cho input[type="checkbox"]{ margin-top:-3px;}
+.audit-party .right{ float:left; width:420px;}
+.golden{ color:#FF9900;}
+
+/* 证书列表 */
+.party-prcList ul li{ width:110px; float:left; margin-right:25px; min-height:140px;}
+.party-prcList .prcList-name{ padding:5px 0px;}
+.party-prcList .prcList-name span{ color:#F00; margin-right:2px;}
+.party-prcList .prcList-prc img{ width:110px; height:75px; cursor:pointer;}
+.party-prcList input[type="checkbox"]{ margin-top:-1px;}
+.party-prcList .prcList-cho{ padding:5px 0px;}
+.party-prcList .prcList-cho a{ color:#09F; text-decoration:underline;}
+.party-prcList .prcList-cho .cho{ float:right;}
+.party-prcShow{ height:350px;}
+.party-prcShow .jqzoom img{ width:380px;}
+.party-prcShow .jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.party-prcShow .zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.party-prcShow .jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+
+.party-box{ width:400px; margin-left:65px; border:#999 dashed 1px; padding:13px; background:#F2F2F2; line-height:28px; margin-bottom:10px;}
+.party-box span{ color:#F00;}
+.audit-bargain{ width:100%; max-width:1100px;}
+.audit-bargain ul li{ width:450px; margin:10px; float:left;}
+.audit-bargain .bargain-cho{ margin:10px 0px; font-size:14px;}
+.audit-bargain .bargain-cho .cho{ float:right;}
+.audit-bargain .bargain-pdf{ width:448px; text-align:center; border:dotted #999999 1px; min-height:78px; line-height:78px;}
+.audit-bargain .bargain-pdf a{ margin-left:10px; color:#09F;text-decoration:underline;}
+.audit-btn .textareatxt{border: 1px solid #ddd;padding: 10px;height: 120px;width: 98%;border-radius: 5px;}
+.audit-btn{ text-align:center;}
+
+/*归属方信息*/
+.attri-title{ text-align:center; background:#F82525; line-height:40px; color:#FFF; font-size:16px;}
+.attri-box{ padding:30px 0px;}
+.attri-box .left{ float:left; text-align:right; width:150px; padding-right:10px; font-size:14px; line-height:30px;}
+.attri-box .right{ float:left;}
+.attri-box .inputTxt{width: 170px;height: 30px;border: 1px solid #ddd;box-sizing: border-box;padding: 5px;}
+
+.sign-clear{ height:1px; border-bottom:#ddd dotted 1px;}
+.sign-select{ font-size:14px; border:#ddd solid 1px; min-width:80px; font-family:"微软雅黑";border: #ddd solid 1px;padding:5px;border-radius: 3px;vertical-align: baseline;}
+.sign-select.ml{ width:192px;}
+.com-box .sign-build{ text-align:center; font-size:18px;}
+.com-box .sign-build a{ display:inline-block; width:300px; height:60px; font-size:18px; line-height:60px; background:#9c0001; margin-top:20px; color:#FFF;}
+.sign-tableTitle{ line-height:30px; background:#EEEEEE; text-indent:10px; font-size:15px;}
+.sign-list{ padding:20px;}
+.sign-tableTitle span{ color:#F00;}
+.sign-list ul li{ min-height:44px; line-height:30px; font-size:14px;}
+.sign-list ul li span{ width:175px; float:left; display:inline-block; text-align:right; padding-right:15px; font-size:14px;}
+.sign-list ul li div.sign-picture{ width:1px; float:left; display:inline-block; text-align:right; padding-right:15px; font-size:14px;color:#F00;}
+.sign-list ul li span.prc-line{ width:120px; float:left; text-align:left; padding-left:10px;}
+.sign-list ul li .input{ float:left;}
+.sign-btn{ padding-left:210px;}
+.sign-center{ text-align:center; font-size:14px;}
+.sign-tableTitle a{ float:right; color:#09F; margin-right:10px; cursor:pointer;}
+
+.sign-top p{ line-height:38px;}
+.contract-list{ background:#9e1b1b; display:inline-block;height:35px; padding:0px;}
+.contract-list p{ width:250px; height:35px; font-size:14px; line-height:35px; position:relative; float:left; margin:0px; text-align:center; color:#FFF;}
+.contract-list p.on{ background:#d40000;}
+.contract-list p span{ display:block; position:absolute; width:24px; height:35px;top:0px; right:-17px; z-index:9;background:url(../images/sign_list.png) 0px -35px no-repeat;}
+.contract-list p.on span{ background-position:0px 0px;}
+.btn-sign{border:none;padding:3px 10px; font-size:13px; border-radius:3px;cursor:pointer; background:#d40000; overflow:hidden; color:#FFF;font-family: "微软雅黑"; border:#9e1b1b solid 1px;}
+.btn-sign-gray{border:none;padding:3px 10px; font-size:13px; border-radius:3px;cursor:pointer; background:gray; overflow:hidden; color:#FFF;font-family: "微软雅黑"; border:gray solid 1px;}
+.btn-sign:active{ background:#9e1b1b;}
+
+.select-list{padding:10px 20px; width:80%;}
+.select-list ul li{ border-bottom:#ddd dotted 1px; width:100%; min-height:120px; padding:10px;}
+.select-list .left{ float:left; width:175px; line-height:38px;float:left; display:inline-block;padding-right:10px; font-size:14px;}
+.select-list .right{ float:left;}
+.select-list .right p{ line-height:38px; font-size:14px;}
+.select-list .right p span{ margin:0px 5px;font-size:14px;}
+
+.sign-upload{ float:left;}
+.sign-upload p{ color:#999; height:32px;}
+.sign-upload a{ color:#06C; text-decoration:underline;}
+.sign-agreed{ padding-left:205px; margin:10px 0px;}
+
+.party-box{ width:400px; margin-left:190px; border:#999 dashed 1px; padding:13px; background:#F2F2F2; line-height:28px; margin-bottom:10px;}
+.party-box p{ font-size:14px;}
+.party-box i{ color:#F00; font-style:inherit; font-size:14px;}
+
+.sign-result{ min-width:1100px; padding:10px;}
+.sign-result p{ font-size:14px; line-height:20px; margin-bottom:15px;}
+.sign-reminder{ background:#F2F2F2; border:#ccc dotted 1px; padding:12px; font-size:14px;}
+.sign-reminder p{ line-height:28px; font-size:14px;}
+.sign-reminder p span{ color:#F00; font-size:14px;}
+
+/*进度详情*/
+.sign-plan{ width:1000px; position:relative; height:60px;}
+.sign-plan .sign-plan-bg{ width:760px; margin-left:120px; margin-top:26px;background:url(../images/sign_bg.jpg) center repeat-x; height:30px; position:absolute;}
+.sign-plan p{ width:250px; float:left; height:30px; position:relative; text-align:center; font-size:14px;}
+.sign-plan p span{ display:block; position:absolute; margin-top:5px; background:url(../images/sign_on.png) 0px -29px no-repeat; width:30px; height:29px; left:50%; margin-left:-15px;}
+.sign-plan p.on span{ background-position:0px 0px;}
+
+.sign-title{ font-size:14px; font-weight:bold; margin:15px 0px;}
+.sign-details{ max-width:1000px;}
+.sign-details .on{ background:#FEE6E6;}
+.sign-details .on .ta_l{ color:#F00;}
+
+/*合同下载*/
+.sign-dl-list{ border:#ccc dotted 1px; padding:12px; font-size:14px;}
+.sign-dl-list ul li{ line-height:28px; list-style:inside;}
+.sign-dl-list ul li a{ color:#06F; font-size:14px; display:inline-block;}
+.sign-dl-list ul li a:hover{ text-decoration:underline;}
+.sign-preview-li{ width:100%; margin:auto; max-width:1000px; height:500px; border:#ddd solid 1px; margin-bottom:20px;}
+
+/* 2015-11-6 梁楚崇 签约后台模板结束 */

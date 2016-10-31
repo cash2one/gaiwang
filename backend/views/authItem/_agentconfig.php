@@ -1,0 +1,19 @@
+<?php
+$config = array(
+    '代理列表'=>array(
+        '列表'=>'CommonAccountAgentDist.AgentList',
+        '更新代理'=>'CommonAccountAgentDist.AjaxUpdateAgent',
+        '移除代理'=>'CommonAccountAgentDist.RemoveAgent',
+        '导出excel'=>'CommonAccountAgentDist.AgentListExport',              
+    ),
+      '代理帐户分配金额记录'=>array(
+        '列表'=>'CommonAccountAgentDist.Admin',
+        '导出excel'=>'CommonAccountAgentDist.AdminExport',                   
+    ),
+	'资金池账户余额'=>array(
+		'列表'=>'CommonAccount.Balance',
+		//'导出excel'=>'CommonAccountAgentDist.AdminExport',
+	),
+);
+$this->renderPartial('_input',array('config'=>$config,'rights'=>$rights));
+?>

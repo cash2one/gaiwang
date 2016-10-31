@@ -1,0 +1,228 @@
+@charset "utf-8";
+/*
+ * Author: 黄锦东
+ * Date: 2015/06/25
+ * Content: 盖象商城线下服务
+ */
+/****************offline*******************/
+body{line-height:1.5;color:#000;font-family:"宋体",arial;font-size: 12px}
+body,p,h1,h2,h3,ul,ol,dl,dd{margin:0}
+ul,ol{list-style:none;padding-left:0}
+:focus{outline:0}
+a{color:#000;cursor:pointer;text-decoration:none}
+a:hover{color:#c83253;text-decoration:none}
+a:focus{outline:1px dotted invert}
+input,img{border:none;vertical-align:middle;}
+input,textarea{color:inherit;font-family:inherit;font-size:12px;padding: 0}
+h1{font-size:20px}
+h2{font-size:16px}
+h3{font-size:14px}
+.offline { font-size: 12px; font-family: "宋体"; background: #f7f7f7; }
+/*.offline img { vertical-align: middle; }*/
+.offline a:hover, .offline a:active, .offline a:focus { outline: none; }
+.w285 {width: 285px}
+.w210 {width: 210px}
+.w395 {width: 395px}
+.h16 {height: 16px}
+.l {float: left}
+.r {float: right}
+.mb10 {margin-bottom: 10px}
+.mr10 {margin-right: 10px}
+.mt12 {margin-top: 12px}
+.mr40 { margin-right: 40px; }
+.abs { position: absolute; }
+.rel {position: relative}
+.fw {font-family:'Microsoft Yahei'}
+.f16{font-size:16px}
+.wh{color: white}
+.tc{text-align: center}
+.lh36{line-height: 36px}
+.cl{clear: both}
+/* 在父元素添加此类清除浮动*/
+.clearfix{*zoom:1;}
+.clearfix:after{display:table; content:''; clear:both;}
+.offline .hide { display: none}
+.offline .icon { display: inline-block; margin: -2px 9px 0 0; background: url(../images/bgs/offline-icon.png) 0 0 no-repeat; font-style: normal; }
+.offline .dropdown { width: 60px; height: 20px; cursor: pointer; word-wrap: break-word; white-space: nowrap; outline: 0; position: relative; vertical-align: text-bottom; display: inline-block; *zoom: 1; *display: inline; }
+.offline .dropdown-text { border: 1px solid #cdcdcd; color: #5d5d5d; padding-left: 12px; }
+.offline .caret { background: url("../images/bgs/index_ioc.png") no-repeat 0 -347px; display: inline-block; width: 5px; height: 3px; vertical-align: middle; margin-left: 5px;}
+.offline .dropdown-list { position: absolute; width:58px;border: 1px solid #cdcdcd; background: #fff; padding:3px 0;margin-top:-1px;}
+.offline .dropdown-list li { padding-left: 12px; overflow:hidden; line-height:18px;}
+/*header*/
+.line-head-bg{ background:#fff;}
+.gx-top-search-btn { width: 58px; float: right; height: 36px; line-height: 36px; color: #fff; text-align: center; background-color: #323333;}
+.gx-top-search-btn:hover { color: #fff; }
+.gx-top-logoarea { position: relative; z-index: 2; float: left; width: 420px; height: 60px; padding: 20px 0;}
+.gx-logo { display: block; width: 187px; height: 56px; margin-right: 265px; }
+.gx-top-extra { position: absolute; left: 187px; bottom: 22px; padding-left: 22px; box-sizing: border-box; }
+.gx-top-extra-channel { font: 400 22px/1 'Microsoft YaHei'; color: #454545; }
+.gx-top-extra label { color: #5f5f5f; }
+.gx-top-search { margin: 40px 0 0 0; }
+.gx-top-advert2 { margin-top: 12px; }
+
+/*navbar*/
+.offline .navbar {background: #b10303; margin-top:30px;}
+.offline .navbar .navbar-inner { position: relative; width: 1200px; height: 45px; margin: 0 auto; background: #1b1e27; }
+.offline .navbar a { font-size: 16px; font-family: 'Microsoft YaHei'; color: #fff; }
+.offline .navbar dt { position: relative; background: #d62125; float: left; width: 164px; height: 45px; line-height: 45px; margin-right: -1px; text-align: center; }
+.offline .navbar dt a { font-size: 22px; }
+.offline .navbar dt div { position: absolute; bottom: 100%; left: -11px; width: 186px; height: 14px; background: #fff url(../images/bgs/navbarbg.png) 50% 50% no-repeat; }
+.offline .navbar dd { float: left; display: inline; padding: 9px 0; height:27px;}
+.offline .navbar dd a { float: left; border-left: 1px dotted #b8b9bc; padding: 0 24px; }
+.offline .navbar .selected { background: #ffc513; margin-right: -1px; }
+.offline .navbar dd span { display: inline-block; overflow: hidden; line-height: 26px; }
+.offline dl .icon { width: 26px; height: 26px;}
+.offline .icon-sport { background-position: -135px -27px; }
+.offline .icon-fit { background-position: -54px 0;; }
+.offline .icon-party { background-position: -81px -27px; }
+.offline .icon-food { background-position: -108px 0; }
+.offline .icon-hotel { background-position: -162px 0; }
+.offline .icon-leisure { background-position: -27px -27px; }
+.offline .icon-beauty { background-position: 0 0;}
+.offline .selected .icon-sport { background-position: -162px -27px; }
+.offline .selected .icon-fit { background-position: -81px 0; }
+.offline .selected .icon-party { background-position: -108px -27px; }
+.offline .selected .icon-food { background-position: -135px 0; }
+.offline .selected .icon-hotel { background-position: 0 -27px; }
+.offline .selected .icon-leisure { background-position: -54px -27px; }
+.offline .selected .icon-beauty { background-position: -27px 0; }
+.offline .banner-right { position: absolute; top:0; right: 0; width: 285px; background: #fff; height: 450px; overflow: hidden; z-index: 2; }
+.offline .banner-right .br-wrap { position: relative; height: 190px; margin-bottom: 1px; }
+.offline .icon-pop { width: 16px; background-position: -206px -19px; }
+.offline .icon-chef { width: 16px; background-position: -189px -19px; }
+.offline .navbar .banner-info { height: 68px;}
+.offline .navbar .info-inner { padding: 11px 0 0 10px; }
+.offline .banner-info .scrollbox { position: relative; overflow: hidden; height: 46px; }
+.offline .scrollbox ul { position: absolute; left: 0; top: 0; float: left; }
+.offline .scrollbox li { float:left; width:158px; height:23px; line-height: 23px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color: #333;}
+.offline .scrollbox li span{ color: #d62125; }
+/*banner*/
+.offline .offlineBanner { height: 450px; margin-top: 6px; position: relative; }
+.offline .offlineBanner .inner {position: relative; width: 1200px; height: 450px; margin: 0 auto; }
+.offline .offlineBanner .inner .slides { padding-right: 287px; }
+.offline .flex-control-nav { width: 913px; position: absolute; bottom: 10px; text-align: center; }
+.offline .flex-control-nav li { margin: 0 6px; display: inline-block; *display: inline; *zoom: 1; z-index: 2; }
+.offline .flex-control-paging li a { width: 11px; height: 11px; display: block; background: #fff; cursor: pointer; text-indent: -9999px; -moz-border-radius: 20px; border-radius: 20px; }
+.offline .flex-control-paging .flex-active { background: #1b1e27; cursor: default; }
+/*hd*/
+.offline .hd { padding: 30px 0;}
+.offline .hd .w1200 {position: relative;}
+.offline .hd .city {position: absolute; top: 75px; left: 524px; font: normal 36px/1 'Microsoft YaHei'; color: #585858;}
+.offline .hd .hr { width: 363px; height: 1px; border-top: 1px solid #747474; display: inline-block;}
+/*restaurant list*/
+.offline .local-life .info { float: left; display: inline; position: relative; }
+.offline .r-left { width: 390px; height: 390px; overflow: hidden; }
+.offline .r-info { position: absolute; left: 11px; right: 11px; top: 17px; height: 105px; background: url(../images/bgs/r-infobg370x105.png) 50% 0 no-repeat; padding: 12px 28px;}
+.offline .r-name {color: white;}
+.offline .r-bg img { width: 100%; height: 100%; }
+.offline .r-right { width: 800px;}
+.offline .r-right-items { margin-right: -10px; *zoom: 1; text-align: center; }
+.offline .r-right-items li { height: 190px; overflow: hidden; }
+.offline .br-wrap p, .offline .r-right-items p, .offline .sd-item p { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); }
+.offline .r-right-recommend { position: absolute; left: 0; top: 0; width: 72px; line-height: 30px; background-color: #d62125; color: #fff; font-family: 'Microsoft YaHei'; font-size: 16px; }
+.offline .good-food { position: relative; width: 100%; height: 170px; overflow: hidden; }
+.offline .good-food p { position: absolute; top: 60px; left: 54px; width: 655px; height: 88px; overflow: hidden; color: #fff; font-family: 'Microsoft YaHei'; }
+/*local life*/
+/*main*/
+.local-life .main { float: left; position: relative; width:944px;}
+.local-life .main .item { width: 944px; margin-bottom: 10px; background: #fff; }
+.local-life .main .item-inner { position: relative; border: 1px solid #cdcdcd; height: 210px; }
+.local-life .info { padding: 46px 25px 0; }
+.local-life .description { width: 282px; height: 36px; color: #959696;overflow:hidden;margin:10px 0;}
+.offline .left-box, .offline .right-box { float: left; display: inline; }
+.local-life .left-box,.offline .company .left-box { float:left;margin:10px 0 0 45px;}
+.local-life .logo,.SL-logo{display:block;border:1px #e3e3e3 solid;float:left;width:138px;height:68px;}
+.offline .discount { font: 400 14px/50px 'Microsoft YaHei'; color: #ea4c43; display: inline-block; width: 50px; height: 50px; text-align: center; background: url(../images/bgs/offline-circle.png) 50% 50% no-repeat; }
+.offline .discount2{margin-top:20px;}
+.offline .right-box { height: 40px;float:right; }
+.offline .views { line-height: 14px; padding: 1px 30px; margin-top: 10px; background: url(../images/bgs/offline-icon.png) -189px -39px no-repeat;}
+.offline .tag { position: absolute; left: 0; top: 0; display: inline-block; width: 61px; height: 61px; background: url(../images/bgs/offline-tags.png) no-repeat; }
+.offline .beauty { background-position: 0 -378px; }
+.offline .entertainment { background-position: 0 0; }
+.offline .fit { background-position: 0 -63px; }
+.offline .food { background-position: 0 -126px; }
+.offline .hotel { background-position: 0 -189px; }
+.offline .leisure { background-position: 0 -252px; }
+.offline .sport { background-position: 0 -315px; }
+.offline .loadmore { text-align: center; padding: 10px 0; margin-bottom:30px;}
+.offline .loadmore a { padding: 11px 35px; background: #bdbdbd; border-radius: 3px; font-size: 18px; font-family: 'Microsoft YaHei'; color: white; }
+/*side*/
+.offline .side { width: 220px; margin-left: 23px; float: left; position: relative; }
+.offline .title { font-family: 'Microsoft YaHei'; font-size: 16px; margin-bottom: 8px; color: #333; padding-left: 8px; border-left: 2px solid #eba34f;}
+.offline .sd-item { margin-bottom: 14px; position: relative; }
+.offline .sd-item p { font: 400 14px/30px 'Microsoft YaHei'; color: white; text-align: center;position:static;background:#1b1e27;overflow:hidden;width:100%;height:30px;}
+/*offline list*/
+.offline_list .local-life { margin-top: 5px; }
+.offline_list .good-food { margin-bottom: 10px; }
+/*offline detail*/
+.offline_detail { background: #f7f7f7; }
+.offline_detail .company-box { margin: 6px 0 20px; }
+/*preview*/
+.offline_detail .preview { width: 754px; background: #f7f7f7; position: relative; *zoom: 1; float: left; display: inline; min-height:200px;}
+.offline_detail .flex-viewport { max-height: 330px; }
+.offline_detail .flexslider .slides { zoom: 1; }
+.offline_detail .flex-active-slide img { width: 754px; height: 330px; }
+.offline_detail .flex-control-nav { width: 770px; position: absolute; bottom: -40px; text-align: center; }
+.offline_detail .flex-control-thumbs { margin: 10px 0 0 -16px; position: static; overflow: hidden; }
+.offline_detail .flex-control-thumbs li { width: 138px; float: left; margin: 0 0 0 16px; }
+.offline_detail .flex-control-thumbs img { width: 100%; height: 86px; display: block; cursor: pointer; }
+.offline_detail .flex-control-thumbs .flex-active { width: 99%; height: 82px; border: 2px solid #ebebeb; }
+/*company*/
+.offline .company-box .company { float: left; display: inline; padding: 20px 40px;color:#8f8f8f;}
+.offline .company h1 { font: 700 24px/1.5em 'Microsoft YaHei'; width:340px;height:40px;overflow:hidden;}
+.offline .company .logo { margin: 19px 0; }
+.offline .company .description { width: 341px; line-height: 20px;height:36px;overflow:hidden;}
+.offline .company .left-box { margin-right: 20px; }
+.offline .company .right-box .inner { padding-top: 18px; }
+.offline .company strong { font: 400 14px/1.5em 'Microsoft YaHei'; color: #eb564d; }
+.offline .company .views { margin-top: 13px; }
+.offline .company .tel, .offline .company .address { margin-top: 20px; height: 18px; line-height: 18px; font-size: 14px; }
+.offline .icon-tel { width: 16px; height: 18px; background-position: -189px 0; }
+.offline .icon-address { width: 13px; height: 18px; background-position: -206px 0; }
+/*location*/
+.offline_detail .main .title { margin-bottom: 0; padding-top: 8px; padding-bottom: 8px; border-bottom: 2px solid #cacaca; }
+.offline_detail .content .main, .offline_detail .content .side { float: left; display: inline; }
+.offline_detail .content .main { width: 944px; text-align: center; }
+.offline_detail .content .main .map p img{width:100%;}
+.offline_detail .main h3, .offline_detail .main p { text-align: left; }
+.offline_detail .main img { margin-bottom: 20px; }
+.offline_detail .intro { overflow: hidden; }
+.offline_detail .intro img{ float: left; margin-left: 38px; padding-right: 33px; border-right: 1px solid #d5d5d5; }
+.offline_detail .intro p { margin-left: 256px; }
+.offline_detail .main p { font: 400 14px/24px 'Microsoft YaHei'; color: #616161; margin-bottom: 20px; }
+
+.SL-img{float:left;width:754px;height:250px;}
+.SL-info{color:#555;font-size:14px;padding-top:15px;}
+.SL-info .address{float:left;}
+.SL-info .tel{float:left;margin-left:80px;}
+.SL-showImg{margin:80px 0 50px 0;}
+.SL-showImg-prev,.SL-showImg-next{top: 14px;left: 0;width: 50px;height: 172px;cursor: pointer;background: url(../images/bgs/ic_offlineArrow.gif) no-repeat scroll 0 0;float:left;}
+.SL-showImg-next{float:right;background: url(../images/bgs/ic_offlineArrow.gif) no-repeat scroll -50px 0;}
+.SL-showImg-list{float:left;width:1050px;margin-left:25px;height:200px;overflow:hidden;position:relative;}
+.SL-showImg-list ul{position:relative;width:99999999px;}
+.SL-showImg-list ul li{float:left;margin:0 5px;width:200px;height:200px;overflow:hidden;}
+.SL-showImg-list ul li img{width:200px;height:200px;}
+.item-inner .abs{width:610px;height:210px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

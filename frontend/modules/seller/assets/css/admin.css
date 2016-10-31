@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* 
+========================================
+	@name 	:	店铺装修编辑框架
+	@author	:	盖网店铺
+	@data	:	2012.1.17
+========================================
+*/
+.banr { width:210px; background:#333 ; float:left; color:#FFF; font-family:"微软雅黑"; border-right:3px solid # FFF; position: absolute;}
+.banr i{ background:url(../images/ico_switch.png) no-repeat; _background:url(../images/ico_switch.gif) no-repeat;width:20px; height:50px; position:absolute; right:-20px; top:0px; cursor:pointer;}
+.banr a{ color: #949090; -webkit-transition: color 1s linear 0s; -moz-transition: color 1s linear 0s; -ms-transition: color 1s linear 0s; -o-transition: color 1s linear 0s; transition: color 1s linear 0s; }
+.banr a:hover{ color:#FFF}
+.banr .title{ height:40px; line-height:40px;font-size:16px; background:#c90000; padding-left:20px;}
+.banr .title span{background:url(../images/ico_set.gif) no-repeat left center #c90000; padding-left:30px; }
+.banr .con .name{padding:0 20px; background:#1b1b1b;height:46px; display:block; line-height:46px; font-size:14px; cursor:pointer; position:relative; }
+.banr .con .name h4{background:url(../images/ico_gn.gif) no-repeat left center; margin-left:25px; padding-left:25px; color:#949090}
+.banr .con .name.hover h4{ font-weight:bold; color:#FFF}
+.banr .con ul{ padding:5px 20px;margin-left:25px; display:none;}
+.banr .con ul li{ height:23px; line-height:23px;}
+.banr .con ul li.hover a{ color:#FFF; font-size:13px;}
+
+#dBody{ float: right; overflow:auto;}
+#dBody iframe{ width:100%}
+.btnzx {background:url(../images/tool.png) no-repeat; _background:url(../images/tool.gif) no-repeat; width:20px; height:50px; position:absolute; left:0; cursor:pointer; }

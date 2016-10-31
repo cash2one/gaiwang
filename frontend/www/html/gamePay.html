@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Keywords" content="盖网,网上购物,网上商城,积分兑换,积分消费,手机,笔记本,电脑,数码,服装,手表,化妆品,保健品,盖象商城" />
+        <meta name="Description" content="盖网,盖象商城-中国最大的网上购物及积分兑换消费商城，便捷，诚信的服务,为您提供愉悦的网上商城购物体验!" />
+        <title>盖网科技盖象商城</title>
+        <link href="../css_1/global.css" rel="stylesheet" type="text/css" />
+        <link href="../css_1/module.css" rel="stylesheet" type="text/css" />
+        <link href="../css_1/game.css" rel="stylesheet" type="text/css" />
+        <script src="../js_1/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="../js_1/jquery.gate.common.js" type="text/javascript"></script>
+        <script src="../js_1/jquery.flexslider-min.js"></script>
+        <script type="text/javascript">
+                    $(function() {
+                    /*头部广告位关闭*/
+                    $("#topBanner .close").click(function() {
+                    $("#topBanner").hide();
+                    })
+                            /*购物车列表*/
+                            $('#myCart').hover(function() {
+                    $(this).find('.cartList').show();
+                    }, function() {
+                    $(this).find('.cartList').delay(3000).hide();
+                    });
+                            /*菜单*/
+                            $("#allMenu").hover(function() {
+                    $("#menuList02").css('display', 'block');
+                    }, function() {
+                    $("#menuList02").css('display', 'none');
+                    })
+                            $("#menuList02").hover(function() {
+                    $(this).css('display', 'block');
+                    }, function() {
+                    $(this).css('display', 'none');
+                    })
+
+                            /*gameBanner 轮播*/
+                            $(".gameFlexslider").flexslider({
+                    slideshowSpeed: 5000,
+                            animationSpeed: 400,
+                            directionNav: false,
+                            pauseOnHover: true,
+                            touch: true
+                    });
+                            /*底部友情连接显示更多*/
+                            $("#morefLinks").click(function() {
+                    if ($(this).hasClass('moreLinks')) {
+                    $(".friendsLinks").css("height", "auto");
+                            $(".friendsLinks").css("overflow", " ");
+                            $("#morefLinks").removeClass("moreLinks").addClass("lessLinks");
+                    } else {
+                    $(".friendsLinks").css("height", "20px");
+                            $(".friendsLinks").css("overflow", "hidden");
+                            $("#morefLinks").removeClass("lessLinks").addClass("moreLinks");
+                    }
+                    })
+
+                            /*回到顶部*/
+                            $("#backTop").click(function() {
+                    $('body,html').stop().animate({scrollTop: 0}, 500);
+                            return false;
+                    });
+                    })
+        </script>
+        <!--处理IE6中透明图片兼容问题-->
+        <!--[if IE 6]>
+        <script type="text/javascript" src="../js/DD_belatedPNG.js" ></script>
+        <script type="text/javascript">
+        DD_belatedPNG.fix('.icon_v,.icon_v_h,.gwHelp dl dd,');
+        </script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <script type="text/javascript">
+                            $(function() {
+                            /*购物车列表*/
+                            $('#myCart').hover(function() {
+                            $(this).find('.cartList').show();
+                            }, function() {
+                            $(this).find('.cartList').delay(3000).hide();
+                            });
+                            })
+                </script>
+                <div class="guideWrap">
+                    <div class="guideWel clearfix">
+                        <div class="welcome fl"> 
+                            <span class="welcomeGw">想你了，欢迎来到盖象！</span>&nbsp;
+
+                            <!--            
+                                        想你了，欢迎来到盖象！&nbsp;&nbsp;<a title="请登录" href="#">请登录</a>&nbsp;&nbsp;<a href="#"  title="免费注册" target="_blank">免费注册</a>-->
+                        </div>
+                        <ul class="guide clearfix">
+                            <script>
+                                        var commonVar = {
+                                        reloadTips: '<div class="loading reload"></div>',
+                                                addCartUrl: '../cart/addCart.html',
+                                                loadCartUrl: '../cart/loadCart.html',
+                                                deleteCartUrl: '../cart/del.html'
+                                        }
+                            </script>
+
+                            <li class="myCart" id="myCart">
+                                <i class="icon_v"></i>
+                                购物车<em id="cartNum">0</em>件    <div id="cartList" class="cartList" style="display:none;">
+                                    <div class="loading"></div>
+                                </div>
+                            </li>
+                            <script type="text/javascript" src="../js/ShoppingCart.js" ></script>
+                            <li class="icon_v myaccount">
+                                <a title="我的盖象" href="http://member.g-emall.com/site">我的盖象</a>            </li>
+                            <li class="business">
+                                <a title="商家入驻" href="http://help.g-emall.com/article/join.html">商家入驻</a>                <a href="#"></a>
+                            </li>
+                            <li class="icon_v collect">
+                                <a onclick="addFavorite(this, window.location, document.title)" href="javascript:void(0)">收藏盖象</a>
+                            </li>
+                            <li class="language">
+                                语言: <select onchange="$.get( & quot; http://hotel.g-emall.com/site/selectLanguage.html&quot;,{language:this.value},function(data){
+                                                    window.location.reload();
+                                            })" name="select_language" id="select_language">
+                                    <option value="1">简体中文</option>
+                                    <option value="2">繁體中文</option>
+                                    <option value="3">English</option>
+                                </select>            </li>
+
+                            <script  type="text/javascript">
+                                        function addFavorite(obj, sURL, title) {
+                                        var url = encodeURI(sURL);
+                                                var B = {
+                                                FF : /Firefox/.test(window.navigator.userAgent)
+                                                };
+                                                obj.onmousedown = null;
+                                                if (B.FF) {
+                                        obj.setAttribute("rel", "sidebar"), obj.title = title, obj.href = url;
+                                        } else{
+                                        try {
+                                        window.external.addFavorite(url, title);
+                                        } catch (e) {
+                                        try {
+                                        window.sidebar.addPanel(title, url, "");
+                                        } catch (e) {
+                                        alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+                                        }
+                                        }
+                                        }
+                                        }
+                            </script>
+                            <li class="share">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_b left" style="line-height:12px;">
+                                    <img src="http://bdimg.share.baidu.com/static/images/type-button-1.jpg?cdnversion=20120831" />
+                                    <a class="shareCount"></a>
+                                </div>
+                                <script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=6822010" ></script>
+                                <script type="text/javascript" id="bdshell_js"></script>
+                                <script type="text/javascript">
+                                    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);</script>
+                                <!-- Baidu Button END -->
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <script type="text/javascript">
+                            $(document).ready(function() {
+                    $('#keyword').focus(function() {
+                    if ($(this).val() == '输入店铺或者宝贝进行搜索') {
+                    $(this).val("");
+                            $(this).addClass('input_search_curr');
+                    }
+                    });
+                            $('#keyword').blur(function() {
+                    if ($(this).val() == "") {
+                    $(this).val('输入店铺或者宝贝进行搜索');
+                            $(this).removeClass('input_search_curr');
+                    }
+                    });
+                    });</script>
+                <div class="logoSearch w1200">
+                    <div class="topBanner" id="topBanner">
+                        <a title="盖网科技" href="http://zt.gatewang.com/site/houseAppliance.html"><img width="1200" height="80" src="../images_1/temp/ad1200X80.jpg" alt="盖网科技" /></a>            <i class="icon_v close"></i>
+                    </div> 
+                    <div class="clearfix">
+                        <a title="盖象商城" class="logo fl" href="http://www.g-emall.com"><img width="215" height="85" src="../images/bgs/logo.png" alt="盖象商城" /></a>                    <div class="adbox fl">
+                            <a title="首页logo广告" href="../"><img width="300" height="110" src="../images_1/temp/ad300X110.jpg" alt="首页logo广告" /></a>            </div>
+
+                        <div class="search">
+                            <form id="home-form" action="../search/view.html" method="get">
+                                <div class="searchBg clearfix">
+                                    <ul class="searchStore" id="searchTab">
+                                        <li id="goods"><a title="宝贝" href="javascript:;">宝贝</a><s class="icon_v"></s></li>
+                                        <li id="store" class="switch" style="display: none;"><a title="店铺" href="javascript:;">店铺</a></li>
+                                        <input id="options" type="hidden" value="" name="o" />                    </ul>
+                                    <input id="keyword" type="text" class="textSearch" placeholder="输入店铺或者宝贝进行搜索" value="" name="q" x-webkit-speech
+                                           x-webkit-grammar="builtin:translate" lang="zh-CN" accesskey="s" autofocus="true"
+                                           autocomplete="off" aria-haspopup="true" aria-combobox="list"/>
+                                    <input type="submit" class="btnSearch" value="" />
+                                </div>
+                            </form>
+                            <ul class="hitSearh clearfix">
+                                <li>热门搜索：</li>
+                                <li>
+                                    <a href="../search/view.html?q=%E6%89%8B%E6%9C%BA">手机</a>                        </li>
+                                <li>
+                                    <a href="../search/view.html?q=%E6%9C%8D%E8%A3%85">服装</a>                        </li>
+                                <li>
+                                    <a href="../search/view.html?q=%E7%94%B5%E8%84%91">电脑</a>                        </li>
+                                <li>
+                                    <a href="../search/view.html?q=%E5%8F%B0%E5%BC%8F%E6%9C%BA">台式机</a>                        </li>
+                                <li>
+                                    <a href="../search/view.html?q=iPhone">iPhone</a>                        </li>
+                                <li>
+                                    <a href="../search/view.html?q=%E5%B0%8F%E7%B1%B32">小米2</a>                        </li>
+
+                            </ul>
+                        </div>
+                        <script>
+                                    $(function() {/*选择店铺或者宝贝搜索*/
+                                    var options_name = '';
+                                            if (options_name) {
+                                    var goods = $('#goods').text();
+                                            if (goods == options_name) {
+                                    $('#goods a').text(options_name);
+                                    } else {
+                                    $('#goods a').text(options_name);
+                                            var store = $('#store a').text(goods);
+                                            $('#options').val(options_name);
+                                    }
+                                    }
+
+                                    $('#searchTab').hover(function() {
+                                    $('#searchTab ul li s').addClass("icon_v");
+                                            $('#searchTab .switch').show();
+                                    }, function() {
+                                    $('#searchTab ul li s').removeClass("icon_v");
+                                            $('#searchTab .switch').hide();
+                                    });
+                                            $('#searchTab .switch a').click(function() {
+                                    var currContent = $(this).text();
+                                            var defCont = $('#goods a').text();
+                                            $('#goods a').text(currContent);
+                                            $(this).text(defCont);
+                                            $('#options').val(currContent);
+                                    })
+                                    });</script>
+
+                        <div class="gateWeixin">
+                            <a title="微信二维码" href="javascript:;"><img width="95" height="95" alt="微信二维码" src="../images/bgs/weixin.jpg" /></a>
+                            <p>关注微信</p>
+                            <p>新品折扣一网打尽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navWrap">
+                    <div class="nav clearfix">
+                        <div class="menu">
+                            <span class="name" id="allMenu">首页/全部商品分类</span>
+                            <ul class="menuList02 clearfix" id="menuList02" style="display:none; ">
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/1.html">家用电器</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="大家电" href="../category/15.html">大家电</a>                                                                    <a target="_blank" title="日用小家电" href="../category/16.html">日用小家电</a>                                                                    <a target="_blank" title="厨房电器" href="../category/17.html">厨房电器</a>                                                                    <a target="_blank" title="个性护理" href="../category/18.html">个性护理</a>                                                                    <a target="_blank" title="健康电器" href="../category/19.html">健康电器</a>                                                                    <a target="_blank" title="五金电器" href="../category/20.html">五金电器</a>                                                                    <a target="_blank" title="空气净化器" href="../category/868.html">空气净化器</a>                                                                    <a target="_blank" title="生活电器" href="../category/879.html">生活电器</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/2.html">服饰鞋帽</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="男装" href="../category/22.html">男装</a>                                                                    <a target="_blank" title="男鞋" href="../category/23.html">男鞋</a>                                                                    <a target="_blank" title="女装" href="../category/25.html">女装</a>                                                                    <a target="_blank" title="女鞋" href="../category/26.html">女鞋</a>                                                                    <a target="_blank" title="运动" href="../category/28.html">运动</a>                                                                    <a target="_blank" title="内衣" href="../category/29.html">内衣</a>                                                                    <a target="_blank" title="童装" href="../category/30.html">童装</a>                                                                    <a target="_blank" title="配饰" href="../category/100.html">配饰</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/3.html">个护化妆</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="口腔护理" href="../category/31.html">口腔护理</a>                                                                    <a target="_blank" title="魅力彩妆" href="../category/32.html">魅力彩妆</a>                                                                    <a target="_blank" title="面部护理" href="../category/33.html">面部护理</a>                                                                    <a target="_blank" title="男性护理" href="../category/34.html">男性护理</a>                                                                    <a target="_blank" title="女性护理" href="../category/35.html">女性护理</a>                                                                    <a target="_blank" title="身体护理" href="../category/36.html">身体护理</a>                                                                    <a target="_blank" title="香水SPA" href="../category/37.html">香水SPA</a>                                                                    <a target="_blank" title="美容按摩器" href="../category/804.html">美容按摩器</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/4.html">手机数码</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="手机通讯" href="../category/21.html">手机通讯</a>                                                                    <a target="_blank" title="手机配件" href="../category/96.html">手机配件</a>                                                                    <a target="_blank" title="摄影摄像" href="../category/97.html">摄影摄像</a>                                                                    <a target="_blank" title="数码配件" href="../category/98.html">数码配件</a>                                                                    <a target="_blank" title="时尚影音" href="../category/99.html">时尚影音</a>                                                                    <a target="_blank" title="运营商" href="../category/103.html">运营商</a>                                                                    <a target="_blank" title="Apple专区" href="../category/849.html">Apple专区</a>                                                                    <a target="_blank" title="电子教育" href="../category/851.html">电子教育</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/5.html">电脑办公</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="电脑整机" href="../category/91.html">电脑整机</a>                                                                    <a target="_blank" title="电脑配件" href="../category/92.html">电脑配件</a>                                                                    <a target="_blank" title="外设产品" href="../category/93.html">外设产品</a>                                                                    <a target="_blank" title="网络产品" href="../category/94.html">网络产品</a>                                                                    <a target="_blank" title="办公打印" href="../category/95.html">办公打印</a>                                                                    <a target="_blank" title="办公文仪" href="../category/102.html">办公文仪</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/6.html">运动健康</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="户外服鞋" href="../category/78.html">户外服鞋</a>                                                                    <a target="_blank" title="户外装备" href="../category/79.html">户外装备</a>                                                                    <a target="_blank" title="体育娱乐" href="../category/81.html">体育娱乐</a>                                                                    <a target="_blank" title="纤体瑜伽" href="../category/82.html">纤体瑜伽</a>                                                                    <a target="_blank" title="运动器械" href="../category/83.html">运动器械</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/7.html">家居家装</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="灯具" href="../category/38.html">灯具</a>                                                                    <a target="_blank" title="家纺" href="../category/39.html">家纺</a>                                                                    <a target="_blank" title="家具" href="../category/40.html">家具</a>                                                                    <a target="_blank" title="家装建材" href="../category/41.html">家装建材</a>                                                                    <a target="_blank" title="清洁用品" href="../category/42.html">清洁用品</a>                                                                    <a target="_blank" title="生活用品" href="../category/43.html">生活用品</a>                                                                    <a target="_blank" title="水具酒具" href="../category/826.html">水具酒具</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/8.html">饮料食品</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="地方特产" href="../category/66.html">地方特产</a>                                                                    <a target="_blank" title="应节礼品" href="../category/67.html">应节礼品</a>                                                                    <a target="_blank" title="进口食品" href="../category/68.html">进口食品</a>                                                                    <a target="_blank" title="酒饮冲调" href="../category/69.html">酒饮冲调</a>                                                                    <a target="_blank" title="粮油调味" href="../category/70.html">粮油调味</a>                                                                    <a target="_blank" title="休闲零食" href="../category/71.html">休闲零食</a>                                                                    <a target="_blank" title="其它礼品" href="../category/72.html">其它礼品</a>                                                                    <a target="_blank" title="营养食品" href="../category/73.html">营养食品</a>                                                                    <a target="_blank" title="新鲜果蔬" href="../category/775.html">新鲜果蔬</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/9.html">礼品箱包</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="潮流女包" href="../category/44.html">潮流女包</a>                                                                    <a target="_blank" title="功能箱包" href="../category/45.html">功能箱包</a>                                                                    <a target="_blank" title="礼品" href="../category/46.html">礼品</a>                                                                    <a target="_blank" title="时尚男包" href="../category/48.html">时尚男包</a>                                                                    <a target="_blank" title="奢侈品" href="../category/101.html">奢侈品</a>                                                                    <a target="_blank" title="时尚钟表" href="../category/853.html">时尚钟表</a>                                                                    <a target="_blank" title="珠宝黄金" href="../category/855.html">珠宝黄金</a>                                                                    <a target="_blank" title="时尚首饰" href="../category/857.html">时尚首饰</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/10.html">珠宝首饰</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="钟表" href="../category/49.html">钟表</a>                                                                    <a target="_blank" title="宝石珍珠" href="../category/84.html">宝石珍珠</a>                                                                    <a target="_blank" title="纯金K金饰品" href="../category/85.html">纯金K金饰品</a>                                                                    <a target="_blank" title="翡翠玉石" href="../category/86.html">翡翠玉石</a>                                                                    <a target="_blank" title="时尚饰品" href="../category/87.html">时尚饰品</a>                                                                    <a target="_blank" title="水晶玛瑙" href="../category/88.html">水晶玛瑙</a>                                                                    <a target="_blank" title="银饰" href="../category/89.html">银饰</a>                                                                    <a target="_blank" title="钻石饰品" href="../category/90.html">钻石饰品</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/11.html">汽车用品</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="安全应急" href="../category/58.html">安全应急</a>                                                                    <a target="_blank" title="车饰精品" href="../category/59.html">车饰精品</a>                                                                    <a target="_blank" title="电子电器" href="../category/60.html">电子电器</a>                                                                    <a target="_blank" title="改装配件" href="../category/61.html">改装配件</a>                                                                    <a target="_blank" title="汽车美容" href="../category/62.html">汽车美容</a>                                                                    <a target="_blank" title="系统养护" href="../category/63.html">系统养护</a>                                                                    <a target="_blank" title="自驾装备" href="../category/64.html">自驾装备</a>                                                                    <a target="_blank" title="坐垫脚垫" href="../category/65.html">坐垫脚垫</a>                                                                    <a target="_blank" title="汽车整车" href="../category/792.html">汽车整车</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/12.html">母婴用品</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="奶粉" href="../category/51.html">奶粉</a>                                                                    <a target="_blank" title="尿裤湿巾" href="../category/52.html">尿裤湿巾</a>                                                                    <a target="_blank" title="童车童床" href="../category/53.html">童车童床</a>                                                                    <a target="_blank" title="喂养用品" href="../category/54.html">喂养用品</a>                                                                    <a target="_blank" title="洗护用品" href="../category/55.html">洗护用品</a>                                                                    <a target="_blank" title="婴儿家居服饰" href="../category/56.html">婴儿家居服饰</a>                                                                    <a target="_blank" title="玩具" href="../category/786.html">玩具</a>                                                                    <a target="_blank" title="乐器" href="../category/788.html">乐器</a>                                                                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/14.html">休闲旅游</a>                        </h3>
+                                    <div class="subItem clearfix">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a target="_blank" href="../category/list/837.html">家庭服务</a>                        </h3>
+                                    <div class="subItem clearfix">
+
+                                        <a target="_blank" title="家政服务" href="../category/838.html">家政服务</a>                                                                    <a target="_blank" title="教育服务" href="../category/839.html">教育服务</a>                                                                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="navItems clearfix">
+                            <li><a class="" title="积分兑换" href="../JF.html">积分兑换</a></li>
+                            <li><a class="" title="线下服务" href="http://jms.g-emall.com">线下服务</a></li>
+                            <li><a class="current" title="酒店预订" href="http://hotel.g-emall.com/">酒店预订</a></li>
+                            <li><a class="" title="最新专题" href="http://zt.g-emall.com">最新专题</a></li>
+                            <li><a class="icon_v gwt" title="盖网通终端服务" href="http://gatewangtong.g-emall.com">盖网通终端服务</a></li>
+                            <li><a href="../html/game.html">游戏</a></li>
+                            <li><a href="../html/gameComic.html">动漫●艺术品</a></li>
+                            <li><a class="" title="药品" href="http://yaopin.g-emall.com/site/productList.html">药品</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>	
+
+            <div class="main w1200">
+                <div class="gamePayCont">
+                    <h3 class="title">帐号充值</h3>
+                    <div class="gamePayTo">
+                        <table class="paySelect" cellpadding="0" cellspacing="0" border="0" width="900">
+                            <tr>
+                                <td height="40"><input type="radio" name="gameCate" checked /><label>直接充值到游戏</label></td>
+                                <td><input type="radio" name="gameCate"  /><label class="red">充值到平台币</label></td>
+                            </tr>
+                            <tr>
+                                <td height="40">
+                                    <select class="selUser">
+                                        <option value="魔力宝贝">魔力宝贝</option>
+                                        <option value="女神联盟">女神联盟</option>
+                                        <option value="天天富翁">天天富翁</option>
+                                        <option value="挂机传奇">挂机传奇</option>
+                                        <option value="塔防海贼王">塔防海贼王</option>
+                                        <option value="赤月版传奇">赤月版传奇</option>
+                                        <option value="争雄三国">争雄三国</option>
+                                        <option value="新天龙八部">新天龙八部</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="selUser">
+                                        <option value="盖网">盖网</option>
+                                        <option value="盖象">盖象</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                            <div class="userInfo">
+                                <table class="paySelect" cellpadding="0" cellspacing="0" border="0" width="900">
+                                    <tbody>
+                                        <th colspan="3">请填写并确认充值信息</th>
+                                        <tr>
+                                            <td class="w120"><label>您需要充值的帐号:</label></td>
+                                            <td class="w250"><input type="text" class="userAccount" disabled="true" value="" placeholder="帐号" /></td>
+                                            <td class="red">填写有角色的帐号</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w120"><label>您确认充值的帐号:</label></td>
+                                            <td class="w250"><input type="text" class="userAccount" disabled="true" value="" placeholder="帐号" /></td>
+                                            <td class="red">填写上面的帐号</td>
+                                        </tr>
+                                    </tbody>
+                                </table>	
+                            </div>
+                            <hr>
+                                <div class="selAmount" id="selAmount">
+                                    <dl>
+                                        <dt>请选择金额</dt>
+                                        <dd>
+                                            <a href="javascript:;" class="amount">10元</a>
+                                            <a href="javascript:;" class="amount">20元</a>
+                                            <a href="javascript:;" class="amount">30元</a>
+                                            <a href="javascript:;" class="amount">50元</a>
+                                            <a href="javascript:;" class="amount">100元</a>
+                                            <a href="javascript:;" class="amount">200元</a>
+                                            <a href="javascript:;" class="amount">300元</a>
+                                            <a href="javascript:;" class="amount">500元</a>
+                                            <a href="javascript:;" class="amount">1000元</a>
+                                        </dd>
+                                        <dd class="ddBlock">其他金额：<input type="text" value="" disabled="true" class="payAmount" />单笔金额最少为1元<span class="red">(输入全额的时候请键盘输入)</span></dd>
+
+                                    </dl>
+                                </div>
+                                <hr>
+                                    <div class="selBank">
+                                        <h3>请选择支付方式</h3>
+                                        <ul class="bankList clearfix">
+                                            <li><input type="radio" name="selBank" checked /><span class="bank01"></span></li>
+                                            <li><input type="radio" name="selBank" /><span class="bank02"></span></li>
+                                            <li><input type="radio" name="selBank" /><span class="bank03"></span></li>
+                                            <li><input type="radio" name="selBank" /><span class="bank04"></span></li>
+                                        </ul>
+                                        <p>充值<span class="red">0</span>元，可以获得<span class="red">0</span>元宝</p>
+                                    </div>
+                                    <hr>
+                                        <div class="submitPay"><input type="submit" value="立即支付" /></div>
+                                        </div>
+                                        </div>
+
+                                        </div>
+                                        <!--底部 begin-->
+                                        <div class="footer">
+                                            <div class="gwEnsure w1200 clearfix">
+                                                <div class="icon_v safeCert">
+                                                    <p>安全认证</p>
+                                                    <p class="en">Safety certification</p>
+                                                </div>
+                                                <div class="icon_v quaGoods">
+                                                    <p>优质商品</p>
+                                                    <p class="en">High quality goods</p>
+                                                </div>
+                                                <div class="icon_v perUpdate">
+                                                    <p>周期更新</p>
+                                                    <p class="en">Periodic updates</p>
+                                                </div>
+                                                <div class="icon_v fastDeli">
+                                                    <p>快速送达</p>
+                                                    <p class="en">Fast delivery</p>
+                                                </div>
+                                                <div class="icon_v service">
+                                                    <p class="tel">400-883-882</p>
+                                                    <p class="time">全国免费客服热线<br>
+                                                            服务时间: 00:00-24:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="gwHelp w1200 clearfix">
+                                                <dl class="">
+                                                    <dt>新手指引</dt>
+                                                    <dd><a title="商家入驻" href="http://help.g-emall.com/article/join.html">商家入驻</a></dd>
+                                                    <dd><a title="合作加盟" href="http://help.g-emall.com/article/affiliate.html">合作加盟</a></dd>
+                                                    <dd><a title="盖网终端机" href="http://help.g-emall.com/article/machine.html">盖网终端机</a></dd>
+                                                </dl>
+                                                <dl class="">
+                                                    <dt>购物指南</dt>
+                                                    <dd><a title="购物流程" href="http://help.g-emall.com/article/shopping.html">购物流程</a></dd>
+                                                    <dd><a title="查询订单" href="http://help.g-emall.com/article/order.html">查询订单</a></dd>
+                                                    <dd><a title="付款方式" href="http://help.g-emall.com/article/payment.html">付款方式</a></dd>
+                                                </dl>
+                                                <dl class="">
+                                                    <dt>积分说明</dt>
+                                                    <dd><a title="盖网积分" href="http://help.g-emall.com/article/gai+score.html">盖网积分</a></dd>
+                                                    <dd><a title="如何获取积分" href="http://help.g-emall.com/article/get+score.html">如何获取积分</a></dd>
+                                                    <dd><a title="如何使用积分" href="http://help.g-emall.com/article/use+score.html">如何使用积分</a></dd>
+                                                </dl>
+                                                <dl class="">
+                                                    <dt>用户服务</dt>
+                                                    <dd><a title="用户注册" href="http://help.g-emall.com/article/register.html">用户注册</a></dd>
+                                                    <dd><a title="找回密码" href="http://help.g-emall.com/article/forgot+password.html">找回密码</a></dd>
+                                                </dl>
+                                                <dl class="last">
+                                                    <dt>商城服务</dt>
+                                                    <dd><a title="正品保障" href="http://help.g-emall.com/article/authenticity+guaranteed.html">正品保障</a></dd>
+                                                    <dd><a title="广告服务" href="http://help.g-emall.com/article/advert+service.html">广告服务</a></dd>
+                                                    <dd><a title="联系客服" href="http://help.g-emall.com/article/contact.html">联系客服</a></dd>
+                                                </dl>
+                                            </div>
+
+                                            <div class="footLink">
+                                                <div class="gwLinks w1200">
+                                                    <a href="../about.html">关于盖网</a> | 
+                                                    <a href="http://help.g-emall.com">帮助中心</a>  |
+                                                    <a href="../sitemap.html">网站地图</a>  | 
+                                                    <a href="../job.html">诚聘英才</a>  | 
+                                                    <a href="../contact.html">联系客服</a>  | 
+                                                    <a href="../statement.html">免责声明</a>  |
+													<a href="../html/gameSupervise.html">家长监护工程</a>
+                                                </div>
+                                                <div class="friendsLinks w1200">
+                                                    <span>友情链接：</span>
+                                                    <a target="_blank" title="盖网酒店" href="http://hotel.gatewang.com">盖网酒店</a>|<a target="_blank" title="中秋活动" href="http://zt.gatewang.com/site/midAutumnFestival_1.html">中秋活动</a>|<a target="_blank" title="万通商务网" href="http://www.u520.net">万通商务网</a>|<a target="_blank" title="农产品商城" href="http://www.gdcct.com">农产品商城</a>|<a target="_blank" title="休闲食品" href="http://www.lingshi.com">休闲食品</a>|<a target="_blank" title="土特产商城" href="http://www.xu.com">土特产商城</a>|<a target="_blank" title="广州去114" href="http://gz.qu114.com">广州去114</a>|<a target="_blank" title="五谷磨房" href="http://www.iwugu.com">五谷磨房</a>|<a target="_blank" title="进口红酒" href="http://www.yaohongjiu.com">进口红酒</a>|<a target="_blank" title="大朴四件套" href="http://www.dapu.com">大朴四件套</a>|<a target="_blank" title="商城" href="http://www.gatewang.com">商城</a>|<a target="_blank" title="家居商城" href="http://www.ihome361.com">家居商城</a>|<a target="_blank" title="小宇宙手机" href="http://www.xyzshouji.com">小宇宙手机</a>|<a target="_blank" title="内衣品牌" href="http://lingerie.moonbasa.com">内衣品牌</a>|<a target="_blank" title="湛江信息网" href="http://zhanjiang.liebiao.com">湛江信息网</a>|<a target="_blank" title="贝因美商城" href="http://www.motherbuy.com">贝因美商城</a>|<a target="_blank" title="产业网" href="http://www.chyxx.com">产业网</a>|<a target="_blank" title="顺丰快递查询" href="http://www.kuaidi100.com/all/sf.shtml">顺丰快递查询</a>|<a target="_blank" title="omega" href="http://omega.wbiao.cn">omega</a>|<a target="_blank" title="网上冲印" href="http://www.iyingji.com">网上冲印</a>|<a target="_blank" title="服装加盟" href="http://fuzhuang.jiameng.com">服装加盟</a>|<a target="_blank" title="池州人才网" href="http://chizhou.offcn.com">池州人才网</a>|<a target="_blank" title="成都装修公司" href="http://cd.zxdyw.com">成都装修公司</a>|<a target="_blank" title="名表价格" href="http://watch.xbiao.com">名表价格</a>|<a target="_blank" title="卧室" href="http://www.meilele.com/category-wofang/">卧室</a>|<a target="_blank" title="时尚" href="http://www.qianzhan.com/fashion/">时尚</a>                    
+                                                    <span class="icon_v_h moreLinks" id="morefLinks"></span>
+                                                </div>
+                                                <div class="copyRight w1200">Copyright©gatewang.com增值电信业务经营许可证：粤B2-20130649 粤ICP备13045334号-1</div>
+                                            </div>
+
+                                        </div>
+                                        </div>
+
+                                        <div class="backTop">
+                                            <div class="bL">
+                                                <a href="javascript:void(0)" title="返回顶部" class="icon_v_h a1" id="backTop"></a>
+                                                <a href="#" title="联系客服" class="icon_v_h a2" target="_blank"></a>
+                                                <a href="#" title="查看购物车"class="icon_v_h a3"target="_blank"  ><span class="num" id="mian_botom_cartcount">1</span></a>
+                                            </div>
+                                            <div class="bR">
+                                                <a href="#f0" title="线下">线下</a>
+                                                <a href="#f1" title="1F" class="curr">1F</a>
+                                                <a href="#f2" title="2F">2F</a>
+                                                <a href="#f3" title="3F">3F</a>
+                                                <a href="#f4" title="4F">4F</a>
+                                                <a href="#f5" title="5F">5F</a>
+                                            </div>
+                                        </div>
+                                        <!-- 返回顶部 end-->
+
+                                        </body>
+                                        </html>

@@ -1,0 +1,27 @@
+<?php 
+ //语言包文件 
+return array (
+  '_卖家平台_' => '_ Seller platform _',
+  '删除' => 'Delete',
+  '店小二' => 'Waiter',
+  '店小二列表' => 'Waiter list',
+  '店小二管理' => 'Waiter Management',
+  '手机号码' => 'Mobile Number',
+  '搜索' => 'Search',
+  '操作' => 'Operating',
+  '用户名' => 'User name',
+  '真实姓名' => 'Real name',
+  '编辑' => 'Editor',
+  '一级菜单' => 'A menu',
+  '二级菜单（页面）' => 'Two menu ( page )',
+  '保存' => 'Save',
+  '修改店小二' => 'Modify Waiter',
+  '修改店小二成功' => 'Modify waiter success',
+  '全选' => 'Select',
+  '基本信息' => 'Basic Information',
+  '权限设定' => 'Permissions',
+  '添加店小二' => 'Add Waiter',
+  '添加店小二成功' => 'Add waiter success',
+  '请上传128*128像素的图片' => 'Please upload a 128 * 128 pixel image',
+  '返回' => 'Return',
+);

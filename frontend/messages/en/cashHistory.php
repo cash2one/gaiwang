@@ -1,0 +1,28 @@
+<?php 
+ //语言包文件 
+return array (
+  'IP' => 'IP',
+  'unknow' => 'unknow',
+  '主键' => 'Primary key',
+  '兑现金额' => 'Cashing amount',
+  '地区' => 'Area',
+  '城市' => 'City',
+  '失败' => 'Failure',
+  '失败原因' => 'Reasons for failure',
+  '实际扣除积分' => 'Actual deduct the credit points',
+  '已转账' => 'Has been transferred',
+  '所属商家或会员' => 'Belongs merchant or member',
+  '手续费率' => 'Fee rates',
+  '比率' => 'Ratio',
+  '状态' => 'Status',
+  '申请中' => 'Applicatio in proceeding',
+  '申请人' => 'Applicant',
+  '申请时间' => 'Application time',
+  '省份' => 'Province',
+  '类型' => 'Type',
+  '账户名' => 'Account Name',
+  '转账中' => 'Transfering',
+  '银行名称' => 'Bank Name',
+  '银行地址' => 'Bank address',
+  '银行帐号' => 'Bank Account',
+);

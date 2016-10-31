@@ -1,0 +1,20 @@
+<?php
+$config = array(
+    '流水日志（新）'=>array(
+        '列表'=>'AccountFlow.Admin',                    
+    ),
+    '历史流水'=>array(
+        '列表'=>'AccountFlowHistory.Admin',   
+    ),
+    '流水导出'=>array(
+        '列表'=>'AccountFlow.ExportMonth',
+        '导出'=>'AccountFlow.ExportCsv',
+        '下载列表'=>'AccountFlow.DownloadList',
+        '下载文件'=>'AccountFlow.Download',
+    ),
+    '余额导出'=>array(
+        '导出'=>'AccountFlow.ExportBalance',
+    ),
+);
+$this->renderPartial('_input',array('config'=>$config,'rights'=>$rights));
+?>

@@ -1,0 +1,1 @@
+<div class="registerTopImg"><a href="<?php echo Yii::app()->createAbsoluteUrl('/hongbao/site/registerCoupon') ?>"><img src="<?php echo DOMAIN ?>/images/bgs/register960X239.jpg" width="960" height="239"/></a></div>

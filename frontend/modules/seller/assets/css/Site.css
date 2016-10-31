@@ -1,0 +1,71 @@
+/*
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+*/
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/***—È÷§¥ÌŒÛ***/
+.field-validation-error{
+	color:#f00; position:absolute; height:24px; line-height:24px; overflow:hidden; margin-left:5px;
+	background:#FFFFC0 url(../images/cross_circle.png) no-repeat left center; padding-left:20px; padding-right:5px; border:1px solid #FFD040;
+	filter: Alpha(Opacity=80);-moz-opacity:0.8; opacity:0.8; 
+}
+.field-validation-error span{
+	color:#C00000;
+}
+.validation-summary-errors{
+	padding:0px; margin:0px; height:30px; line-height:20px;
+}
+.validation-summary-errors ul{ 
+	list-style:none;  padding:0px; margin:0px;
+}
+.validation-summary-errors ul li{
+	color:#f00; height:24px; line-height:24px; overflow:hidden; margin-left:5px;
+	background:#FFFFC0 url(../images/cross_circle.png) no-repeat left center; padding-left:20px; border:1px solid #FFD040;
+}
+.validation-summary-valid {
+    display: none;
+}

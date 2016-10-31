@@ -1,0 +1,39 @@
+<?php
+$config = array(
+    '代理提现申请单'=>array(
+        '列表'=>'CashHistory.ApplyCash',
+        '审阅'=>'CashHistory.SetReview',
+        '查看'=>'CashHistory.EnterpriseApplyCashDetail',
+        '批量审核'=>'CashHistory.CheckedBatch',
+        '批量转账'=>'CashHistory.CashBatchUpdate',       
+        '导出excel'=>'CashHistory.ApplyCashExport', 
+    ),
+      '企业会员提现申请单'=>array(
+        '列表'=>'CashHistory.EnterpriseApplyCash',
+        '审阅'=>'CashHistory.EnterpriseSetReview',
+        '查看'=>'CashHistory.EnterpriseApplyCashDetail',
+      	'批量代付审核'=>'PaymentBatch.EnterpriseCheckedDfBatch',
+        '批量审核'=>'CashHistory.EnterpriseCheckedBatch',  
+        '批量转账'=>'CashHistory.EnterpriseCashBatchUpdate', 
+        '导出excel'=>'CashHistory.EnterpriseApplyCashExport',   
+    ),
+     '普通会员提现申请单'=>array(
+        '列表'=>'CashHistory.MemberApplyCash',
+        '审阅'=>'CashHistory.MemberSetReview',
+        '查看'=>'CashHistory.MemberApplyCashDetail',
+        '批量审核'=>'CashHistory.MemberCheckedBatch',  
+        '批量转账'=>'CashHistory.MemberCashBatchUpdate', 
+        '导出excel'=>'CashHistory.MemberApplyCashExport',   
+    ),
+	'自动提现申请单'=>array(
+		'批次列表'=>'PaymentBatch.Admin',
+		'审核列表'=>'Payment.Admin',
+		'审核是否通过'=>'PaymentBatch.ChangeStatus',
+		'转账'=>'PaymentBatch.ChangePayStatus',
+		'锁定状态'=>'Payment.ChangeLock',
+		'删除代付'=>'Payment.Delete',
+		'导出excel'=>'Payment.AdminExport',
+	),
+);
+$this->renderPartial('_input',array('config'=>$config,'rights'=>$rights));
+?>

@@ -1,0 +1,27 @@
+
+.header { width:100%; height:78px; background:url(../images/header_bj.jpg) repeat-x;}
+.headbox { background:url(../images/headbox_bj.jpg) no-repeat right; width:100%; height:78px;}
+
+.logo_box { width:auto; margin-left:20px; }
+.logo_box img { margin-top:8px;}
+
+.user_box { height:38px; margin-top:20px; margin-left:40px; font-size:12px;}
+.user_photo { width:38px; height:38px; margin-right:15px;}
+.userinfo,.userinfo a{ color:#c7ccd1; line-height:20px;}
+.userinfo span { padding: 0;color:#88b731;}
+.userinfo a,.userinfo p,.mininav a,.mininav p { float:left;}
+.userinfo p,.mininav p { margin:0 10px;}
+
+.search { width:300px; font-size:12px; float:right; margin:0px 15px 0 0;}
+.mininav { float:right;}
+.mininav a,.mininav p { color:#c7ccd1; line-height:34px;}
+
+.search_box { float:right;}
+#search_box { width:208px; height:33px; margin:0; padding:0 8px;line-height:33px; font-size:12px; color:#c7ccd1;  float:left; display:block; border:none; background:url(../images/search_bj.jpg) no-repeat;}
+/*#search_button { width:44px; height:33px; display:block; float:left; background:url(../images/buttom_search.jpg) no-repeat; border:none; margin:0; cursor:pointer;}*/
+#search_button {height:28px; width:63px; background:url(../images/button_04.png) no-repeat; display:inline-block; color:#003f69; font:14px "微软雅黑", "新宋体"; font-weight:bold; text-align:center; line-height:25px; cursor:pointer;}
+
+
+
+
+.login_header { width:1000px; margin:auto;}

@@ -1,0 +1,26 @@
+<?php 
+ //语言包文件 
+return array (
+  '【删除】 ' => '[Delete]',
+  '【添加类别】 ' => '[ Add a Category ]',
+  '【编辑】 ' => '[ Edit ]',
+  '上级分类' => 'Sub-headings',
+  '保存' => 'Save',
+  '分类名称' => 'Category Name',
+  '宝贝信息分类或修改。' => 'Goods information classified or modified.',
+  '宝贝分类管理 ' => 'Goods category management',
+  '成功' => 'Success',
+  '排序' => 'Sort',
+  '描述' => 'Description',
+  '操作' => 'Operating',
+  '新增 ' => 'New',
+  '新增宝贝分类 ' => 'New Credit Point Categories',
+  '显示状态' => 'Display status',
+  '添加分类' => 'Add categories',
+  '确定删除此分类？' => 'Are you sure to delete this category ?',
+  '编辑宝贝分类' => 'Edit software Classification',
+  '说明' => 'Explanation',
+  '顶级分类' => 'Top Categories',
+  '修改分类' => 'Modify the classification',
+  '成功删除分类' => 'Successfully removed the classification',
+);
